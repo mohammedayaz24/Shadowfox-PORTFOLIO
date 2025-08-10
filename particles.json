@@ -1,0 +1,32 @@
+{
+  "particles": {
+    "number": {
+      "value": 250
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "triangle"
+    },
+    "opacity": {
+      "value": 0.5
+    },
+    "size": {
+      "value": 3
+    },
+    "move": {
+      "enable": true,
+      "speed": 5
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      }
+    }
+  },
+  "retina_detect": true
+}
