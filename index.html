@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PORTFOLIO</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
@@ -12,20 +13,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
-
   <header class="header">
     <div class="mini-name">Mohammed Ayaz</div>
-    <div class="navbar-container">
-      <button class="nav-btn">Home</button>
-      <button class="nav-btn">About</button>
-      <button class="nav-btn">Skills</button>
-      <button class="nav-btn">Project</button>
-      <button class="nav-btn">Contact</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="navbar-container" id="navbar">
+      <a href="#hero-section" class="nav-btn">Home</a>
+      <a href="#about-me" class="nav-btn">About</a>
+      <a href="#skills-main-container" class="nav-btn">Skills</a>
+      <a href="#project-main-container" class="nav-btn">Project</a>
+      <a href="#container-connect" class="nav-btn">Contact</a>
     </div>
   </header>
 
   <!-- HERO SECTION -->
-  <div class="hero-section">
+  <div class="hero-section" id="hero-section">
     <div id="particles-js"></div> <!-- particle container -->
     
     <div class="hero-content">
@@ -48,13 +53,13 @@
 
     <div class="about-me-container">
       <div class="about-me-content">
-        <div class="about-me">About Me</div>
+        <div class="about-me" id="about-me">About Me</div>
         <div class="about-me-desc">Hi, I'm Mohammed Ayaz — a passionate Computer Science Engineering student with a love for building apps, solving real-world problems, and blending creativity with code. I'm currently working on futuristic projects like AvengerCore and Inside_Ambur.</div>
       </div>
       <section class="profile-section">
         <div class="profile-wrapper">
           <div class="profile-card">
-            <img src="ayaz.jpg" alt="Profile" class="profile-image" />
+            <img src="ayaz1.jpg" alt="Profile" class="profile-image" />
             <p class="profile-title">CSE Student & Developer</p>
           </div>
 
@@ -90,7 +95,7 @@
       </section>  
     </div>
 
-    <div class="skills-main-container">
+    <div class="skills-main-container" id="skills-main-container">
       <div class="skill-content">
         <div class="skill-head">Skills & Technology</div>
         <div class="skill-desc">A comprehensive toolkit for building modern, scalable applications</div>
@@ -306,7 +311,7 @@
       </section>
     </div>
 
-    <div class="project-main-container">
+    <div class="project-main-container" id="project-main-container">
       <div class="project-title">Featued Projects</div>
       <div class="project-title-desc">Showcasing 3+ innovative solutions that blend creativity with cutting-edge technology</div>
       
@@ -344,20 +349,20 @@
             <img class="project-image" src="lap2.webp">
           </div>
           <div class="project-content">
-            <h3>AvengerCore</h3>
-            <p>AI-powered fraud detection app that uses advanced machine learning algorithms to identify and prevent fraudulent activities in real-time.</p>
+            <h3>PRINTMATE</h3>
+            <p>A document collaboration and printing solution.</p>
             <div class="tech-stack">
-              <span>React Native</span>
-              <span>Python</span>
+              <span>HTML</span>
+              <span>CSS3</span>
               <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>Machine Learning</span>
+              <span>NodeJs</span>
+              <span>MySQL</span>
             </div>
 
             <ul class="features">
-              <li>Real-Time Fraud Detection</li>
-              <li>Machine learning algorithms</li>
-              <li>Loan App Risk Detection</li>
+              <li>Real Time document collaboration</li>
+              <li>Seamless printing solutions</li>
+              <li>AI-driven print optimization</li>
             </ul>
 
             <div class="buttons">
@@ -405,7 +410,7 @@
 
     <!-- contact detailes -->
 
-    <div class="container-connect">
+    <div class="container-connect" id="container-connect">
       <h1>Let's Connect</h1>
       <p class="subtitle">Ready to collaborate on your next project? Let's discuss how we can bring your ideas to life.</p>
 
@@ -500,5 +505,20 @@
       console.log('Particles loaded.');
     });
   </script>
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+    // Optional: Close menu when a link is clicked
+    document.querySelectorAll('.nav-btn').forEach(link => {
+      link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+      });
+    });
+</script>
 </body>
 </html>
