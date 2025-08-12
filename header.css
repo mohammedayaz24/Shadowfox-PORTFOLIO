@@ -1,0 +1,98 @@
+.header{
+    height: 50px;
+    border-width: 1px;
+    border-color: #ffffff1a;
+    background-color: rgb(255 255 255 / 0.05);    
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / .25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 500;
+}
+
+.mini-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a855f7, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-left: 30px;
+    font-family: 'roboto';
+}
+.navbar-container{
+    margin: 0 30px;
+}
+.nav-btn{
+    margin: 0 10px;
+    padding: 8px 16px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+   
+
+.nav-btn:hover{
+    transform: scale(1.1);
+    border:1px solid #a855f7;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transform:scale(1.01);
+    box-shadow: 2px 2px 10px #a855f7;
+   
+}
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 28px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .navbar-container {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 20px 0 20px 20px;
+    display: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  .navbar-container.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
