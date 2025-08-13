@@ -326,8 +326,9 @@ body, html {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  min-width: 200px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  flex: 1 1 calc(25% - 1rem); /* 4 per row on desktop */
+  box-sizing: border-box;
 }
 
 .stat-box:hover{
@@ -1089,8 +1090,9 @@ body, html {
 }
 @media (max-width: 768px) {
   .stats-row {
-      flex-direction:column;
       flex-wrap:wrap;
+      justify-content: center; /* optional, keeps them centered */
+
    
   }
   .stat-box {
@@ -1098,6 +1100,8 @@ body, html {
         border-radius: 12px;
         text-align: center;
         min-width: 150px;
+        flex: 1 1 calc(50% - 1rem); /* 2 per row */
+        box-sizing: border-box;
   }
 }
 
@@ -1159,6 +1163,7 @@ body, html {
 
   }
 }
+
 
 
 
