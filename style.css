@@ -312,12 +312,9 @@ body, html {
 }
 
 .stats-row {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-
+  display: grid;
+  grid-template-column:repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .stat-box {
@@ -1068,9 +1065,8 @@ body, html {
     padding: 15px;
   }
  .stat-rows{
-     display:flex;
-     flex-direction:column;
-     flex-wrap:wrap;
+     display:grid;
+     grid-template-column:repeat(2, 1fr)
    }
   .stat-box {
     width: 30vw !important;
@@ -1152,6 +1148,7 @@ body, html {
 
   }
 }
+
 
 
 
