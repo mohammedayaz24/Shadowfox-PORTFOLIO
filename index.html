@@ -524,24 +524,10 @@
       });
     });
 </script>
-  <script>
-document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
-
-    let phoneNumber = "91XXXXXXXXXX"; // your WhatsApp number without + or spaces
-    let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-        `Hello, my name is ${name} (${email}).\n\n${message}`
-    )}`;
-
-    window.open(whatsappURL, '_blank');
-});
-</script>
+ 
 </body>
 </html>
+
 
 
 
