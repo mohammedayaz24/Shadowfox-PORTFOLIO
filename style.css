@@ -103,7 +103,10 @@ body, html {
   width: 200px;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  text-align:center;  
   text-decoration: none;
+
+
 }
 
 .view-my-work:hover{
@@ -1142,6 +1145,7 @@ body, html {
 
   }
 }
+
 
 
 
