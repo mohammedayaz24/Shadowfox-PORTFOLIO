@@ -317,6 +317,8 @@ body, html {
   display: grid;
   grid-template-column:repeat(4, 1fr);
   gap: 1rem;
+  padding:0 1rem;
+  box-sizing:border-box;
 }
 
 .stat-box {
@@ -324,7 +326,6 @@ body, html {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  min-width: 200px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -336,7 +337,7 @@ body, html {
 }
 
 .stat-box h2 {
-  font-size: 32px;
+  font-size: 30px;
   color: #0ea5e9;
   margin-bottom: 0px;
 }
@@ -1158,6 +1159,7 @@ body, html {
 
   }
 }
+
 
 
 
