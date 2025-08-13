@@ -317,7 +317,6 @@ body, html {
   display: grid;
   grid-template-column:repeat(4, 1fr);
   gap: 1rem;
-  max-width:100%;
 }
 
 .stat-box {
@@ -1088,15 +1087,16 @@ body, html {
 }
 @media (max-width: 768px) {
   .stats-row {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items:center;
     gap: 1rem;
+    padding:0 1rem;
   }
   .stat-box {
     min-width: unset;
     width: 100%;
     margin: 0;
+    text-align:center;
   }
 }
 
@@ -1158,6 +1158,7 @@ body, html {
 
   }
 }
+
 
 
 
