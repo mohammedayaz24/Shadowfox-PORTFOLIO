@@ -1077,7 +1077,11 @@ body, html {
       font-size: 0.9rem;
   }
   .about-me-desc{
-  font-size: 15px;  
+  font-size: 15px;
+  }
+  .site-footer p {
+    font-size: 0.8rem;
+}
 }
 @media (max-width: 500px) {
   .stats-row {
@@ -1150,6 +1154,7 @@ body, html {
 
   }
 }
+
 
 
 
