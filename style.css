@@ -1069,11 +1069,11 @@ body, html {
   }
  .stat-rows{
      display:flex;
-     flex-direction:row;
+     flex-direction:column;
      flex-wrap:wrap;
    }
   .stat-box {
-    width: 40vw !important;
+    width: 35vw !important;
     max-width: 300px !important;
     padding: 10px;
     font-size: 0.9rem;
@@ -1152,6 +1152,7 @@ body, html {
 
   }
 }
+
 
 
 
