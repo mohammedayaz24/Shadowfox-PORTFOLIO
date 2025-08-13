@@ -325,7 +325,7 @@ body, html {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  min-width: 200px;
+  min-width: 220px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   flex: 1 1 calc(25% - 1rem); /* 4 per row on desktop */
   box-sizing: border-box;
@@ -1092,12 +1092,12 @@ body, html {
   .stats-row {
       flex-wrap:wrap;
       justify-content: center; /* optional, keeps them centered */
-
-   
   }
+    
   .stat-box {
         flex: 1 1 calc(50% - 1rem); /* 2 per row */
-        min-width: 150px;
+        min-width: 100px;
+        max-width:150px !important;
         padding: 10px;
   }
 }
@@ -1160,6 +1160,7 @@ body, html {
 
   }
 }
+
 
 
 
