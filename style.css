@@ -1085,6 +1085,8 @@ body, html {
       margin: 10px;
       font-size: 0.9rem;
   }
+  .about-me-desc{
+  font-size: 15px;  
 }
 
 @media (max-width: 900px) {
@@ -1145,6 +1147,7 @@ body, html {
 
   }
 }
+
 
 
 
