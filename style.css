@@ -603,7 +603,7 @@ body, html {
       -webkit-text-fill-color: transparent;
       background-clip: text;
       color: transparent;
-      margin-top: 25px;
+      margin-top: 20px;
     }
 
     .project-title-desc{
@@ -621,7 +621,7 @@ body, html {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
+      gap: 30px;
     }
 
     .project-cards{
@@ -629,7 +629,7 @@ body, html {
       color: white;
       border-radius: 15px;
       width: 350px;
-      height: 800px;
+      height: 820px;
       padding: 20px;
       transition: transform 0.3s ease,box-shadow 0.3s ease;
       display: flex;
@@ -1142,5 +1142,6 @@ body, html {
 
   }
 }
+
 
 
