@@ -3,11 +3,13 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: 'roboto';
+  overflow-x:hidden;
 }
 
 .hero-section {
@@ -315,6 +317,7 @@ body, html {
   display: grid;
   grid-template-column:repeat(4, 1fr);
   gap: 1rem;
+  max-width:100%;
 }
 
 .stat-box {
@@ -1037,7 +1040,7 @@ body, html {
 }
 
 /* For very small screens */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .hero-name,
   .about-me,
   .skill-head,
@@ -1083,10 +1086,11 @@ body, html {
     font-size: 0.8rem;
 }
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .stats-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items:center;
     gap: 1rem;
   }
   .stat-box {
@@ -1154,6 +1158,7 @@ body, html {
 
   }
 }
+
 
 
 
