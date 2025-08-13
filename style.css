@@ -1073,7 +1073,7 @@ body, html {
      flex-wrap:wrap;
    }
   .stat-box {
-    width: 35vw !important;
+    width: 30vw !important;
     max-width: 300px !important;
     padding: 10px;
     font-size: 0.9rem;
@@ -1152,6 +1152,7 @@ body, html {
 
   }
 }
+
 
 
 
