@@ -621,7 +621,7 @@ body, html {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 25px;
     }
 
     .project-cards{
@@ -635,7 +635,7 @@ body, html {
       display: flex;
       flex-direction: column;
       line-height: 24px;
-      gap: 35px;
+      gap: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
@@ -1142,4 +1142,5 @@ body, html {
 
   }
 }
+
 
