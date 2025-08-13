@@ -592,7 +592,7 @@ body, html {
       align-items: center;
       justify-content: start;
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
     }
 
     .project-title{
@@ -1142,6 +1142,7 @@ body, html {
 
   }
 }
+
 
 
 
