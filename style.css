@@ -315,10 +315,9 @@ body, html {
 
 .stats-row {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
 }
 
 .stat-box {
@@ -326,8 +325,9 @@ body, html {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
+  min-width: 200px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  flex: 1 1 calc(25% - 3rem); /* 4 per row on desktop */
+  flex: 1 1 calc(25% - 1rem); /* 4 per row on desktop */
   box-sizing: border-box;
 }
 
@@ -1096,12 +1096,9 @@ body, html {
    
   }
   .stat-box {
-        padding: 10px;
-        border-radius: 12px;
-        text-align: center;
-        min-width: 150px;
         flex: 1 1 calc(50% - 1rem); /* 2 per row */
-        box-sizing: border-box;
+        min-width: 150px;
+        padding: 10px;
   }
 }
 
@@ -1163,6 +1160,7 @@ body, html {
 
   }
 }
+
 
 
 
