@@ -1089,7 +1089,7 @@ body, html {
 }
 @media (max-width: 768px) {
   .stats-row {
-      flex-direction:row;
+      flex-direction:column;
       flex-wrap:wrap;
    
   }
@@ -1159,6 +1159,7 @@ body, html {
 
   }
 }
+
 
 
 
