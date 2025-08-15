@@ -475,9 +475,30 @@
                 <input type="text" id="user-name" placeholder="Your Name">
                 <input type="email" id="user-email" placeholder="Your Email">
                 <textarea id="user-message" placeholder="Your Message"></textarea>
-                <button type="submit" class="submit-send">Send Message</button>
+                <button type="submit" class="submit-send">Send Message</button> <!-- type="submit" is correct -->
                 <div class="mini-name2">Mohammed Ayaz</div>
               </form>
+              <script>
+                document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  // Get form values
+                  const name = document.getElementById('user-name').value.trim();
+                  const email = document.getElementById('user-email').value.trim();
+                  const message = document.getElementById('user-message').value.trim();
+              
+                  // Format WhatsApp message
+                  const whatsappMsg = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+              
+                  // Your WhatsApp number (with country code, no +, no spaces)
+                  const phoneNumber = "919943946886"; // Example: 919943946886 for India
+              
+                  // WhatsApp API URL
+                  const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMsg}`;
+              
+                  // Redirect to WhatsApp
+                  window.open(whatsappURL, '_blank');
+                });
+              </script>
           </div>
       </div>
   </div>
@@ -524,30 +545,11 @@
     });
 </script>
 
-  <script>
-  document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Get form values
-    const name = document.getElementById('user-name').value.trim();
-    const email = document.getElementById('user-email').value.trim();
-    const message = document.getElementById('user-message').value.trim();
-
-    // Format WhatsApp message
-    const whatsappMsg = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-
-    // Your WhatsApp number (with country code, no +, no spaces)
-    const phoneNumber = "919943946886"; // Example: 919943946886 for India
-
-    // WhatsApp API URL
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMsg}`;
-
-    // Redirect to WhatsApp
-    window.open(whatsappURL, '_blank');
-  });
-</script>
+  
  
 </body>
 </html>
+
 
 
 
