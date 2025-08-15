@@ -1171,6 +1171,15 @@ body, html {
   z-index: 2;
 }
 
+#whatsapp-form input,
+#whatsapp-form textarea,
+#whatsapp-form button {
+  position: relative;
+  z-index: 10;
+}
+
+
+
 
 
 
