@@ -1160,6 +1160,10 @@ body, html {
 
   }
 }
+.contact-form h2 {
+    text-decoration: none !important;
+}
+
 
 
 
